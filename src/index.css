@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body{
+    height: 100%;
+    width: 100%;
+  }
+  
+  nav{
+    background-color: black;
+    height: 6vmax;
+    width: 100vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: .5vmax 2vmax;
+    font: 800 2vmax "Helvetica";
+  }
+  .navpart-2{
+    display: flex;
+    gap: 5vmax;
+    font: 100 1.5vmax "sofia pro regular";
+    color: rgb(176, 147, 74);
+  }
+  .center{
+    height: calc(100% - 6vmax);
+    width: 100vmax;
+  
+  }
+  .part-1{
+    height: 30vmax;
+    width: 100vmax;
+    display: flex;
+    justify-content: space-evenly;
+   padding: 0 3vmax;
+   margin-top: 6vmax;
+  }
+ 
+  .part-1>.c-p1{
+    height: 95%;
+    width: 22%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    font-family: "sofia pro regular";
+    /* padding: 2vmax 5vmax; */
+  }
+  .part-1>.c-p1, h4{
+    font-weight: 100;
+  }
+  
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  img{
+    height: 60%;
+    width: 100%;
+    transition: all ease-in-out .3s;
+  }
+img:hover{
+    transform: scale(1.1);
+}
+.pagination-controls{
+  height: 2vmax;
+  width: 15vmax;
+  margin-left: 45vmax;
+  margin-top: 3vmax;
+  font-family: "helvetica";
+}
+.pagination-controls button{
+  background-color: black;
+  color: #fff;
+}
+
+
+@media (max-width:1350px){
+
+  nav{
+   height: 90px;
+   width: 100vw;
+   font-size: 25px;
+ }
+ .center{
+   width: 100vw;
+   height: 210vh;
+   overflow: hidden;
+   /* background-color: aqua; */
+}
+.part-1{
+ width: 100vw;
+ height: 200vh;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ /* background-color: red; */
+ align-items: center;
+}
+.part-1>.c-p1{
+ width: 100vw;
+height: 200vh;
+padding: 2vmax 5vmax;
+font-size: 25px;
+}
+.pagination-controls{
+ height: 5vmax;
+ width: 40vmax;
+ margin-left: 10vmax;
+ margin-top: -.5vmax;
+ font-family: "helvetica";
+ font-size: 25px;
+}
+.pagination-controls button{
+ background-color: black;
+ color: #fff;
+ font-size: 20px;
+} 
+
+} 
+
+
+ @media (max-width:700px){
+
+   nav{
+    height: 90px;
+    width: 100vw;
+  }
+  .center{
+    width: 100vw;
+    height: 210vh;
+    overflow: hidden;
+    
+}
+.part-1{
+  width: 100vw;
+  height: 200vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.part-1>.c-p1{
+  width: 100vw;
+padding: 2vmax 5vmax;
+font-size: 16px;
+}
+.pagination-controls{
+  height: 5vmax;
+  width: 40vmax;
+  margin-left: 10vmax;
+  margin-top: -.5vmax;
+  font-family: "helvetica";
+  /* background-color: red; */
+  font-size: 25px;
+}
+.pagination-controls button{
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+}
+ 
+} 
+
